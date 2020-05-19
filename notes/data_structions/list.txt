@@ -1,0 +1,68 @@
+List[mutable  ]
+  * insertion order is perserved
+  * duplicate object is allowed
+  * hetergeneous order is allowed
+creation of list:
+-----------------
+l = []
+l = [10,20,30,40]
+l = eval(input('Enter the inputs'))
+l =  list('abc')[list accept one argument]
+l = list('abc','bcc') ==> invalid
+l = split() fucntion
+
+fetch the content of List
+--------------------------
+index()
+slice()
+
+list vs tuple:
+-------------
+list is mutable
+tuple is immutable
+
+Traversing elements  of a list:
+-------------------------------
+if i is index
+i           = +ve index
+i-len(list) = -ve index
+
+Important functions of list:
+----------------------------
+1.len()   => no of elements in the list
+2.count() => no of occerances of each element in the list
+3.index() => index of 1st occurance of element
+
+l = [1,1,2,3,2,3,3,3,4,4,4,5,5,5,5,5]
+l.count(1) = 2
+l.count(5) = 5
+l.index(1) = 0
+
+Manipulating the list elements:
+-----------------------------
+1. append() =>always going to add element at the last
+2. insert() => insert the element at the specified position
+
+l = [1,2,3,4]
+l.insert(1,9999) = [1,9999,2,3,4,]
+l.insert(30,9999) = [1,2,3,4,9999] = no error
+l.insert(-20,9999) = [9999,1,2,3,4]=no error
+
+3.extend() => adding the two lists
+4.remove(value) => remove the elements
+  l = [10,20,10,30]
+  l.remove(10) => [20,10,30]
+  l.remove(50) => value error
+
+5.pop() =>always going to remove last element from the list and returns that element
+  pop(index)
+
+ordering the list:
+------------------
+1.reverse()
+2.sort() =>list contain same type of elements
+    default accending order
+    alphabetical order
+3.sort(reverse = True)
+    decending order
+    reverse alphabetical order

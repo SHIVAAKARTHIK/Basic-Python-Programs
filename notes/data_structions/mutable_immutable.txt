@@ -1,0 +1,21 @@
+1. Appending Performance -  Mutability Wins!
+    Now when someone tells you multiple appending to a string object is inefficient,
+    you will understand exactly why (string objects are immutable too in python).
+2.Easiness of Debugging - immutable Wins
+  >>> a = [1, 3, 5, 7]
+  >>> b = a
+  >>> b[0] = -10
+  >>> a
+  [-10, 3, 5, 7]
+  In other words when we do b[0] = -10, it has the same effect as a[0] = -10
+  This is not the case with immutable objects even if you have multiple references to them.
+  Once an immutable object is created, its content will never change
+
+3.Memory Efficiency - Immutability Wins
+    >>> a = "Karim"
+    >>> b = "Karim"
+    >>> id(a)
+    address of both a and b will be same
+
+    for tuple identity will be different
+    This design decision makes sense because performing interning for tuples requires making sure that all the tuple items are themselves immutable.

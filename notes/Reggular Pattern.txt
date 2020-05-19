@@ -1,0 +1,82 @@
+1. compile()
+  'py'
+   regex object
+   pattern = re.compile('py') => <SRE.pattern>
+
+2.finditer()
+  macher = pattern.finditer('learning python is easy')
+
+  * start() => start index of the match
+  * end()   => end+1 index of the match
+  * group() => Returns matched string
+
+Character Classes:
+------------------
+[abc] = either a,b or c
+[^abc] = except a,b,c
+[a-z] = lower case alphabet symbole
+[a-zA-Z] = any alphabet
+[0-9] = any numbers
+
+Predefined character Classes:
+----------------------------
+\s  => space Character
+\S  => except space Character
+\d  => digit character
+\D  => except digit Character
+\w  => word character[alpha numeric character] [a-zA-Z0-9]
+\W  => except word character[special character][^a-zA-Z0-9]
+.   => Any character
+
+Quantifier:
+-----------
+No of occurance
+a => exactly a
+a+ => atleast one 'a'
+a* => any number of a's including zero no also
+      0 ---- a
+      1 ----
+      2 ---- aa
+      4 ----
+      5 ---- aaa
+      8 ----
+      9 ----      [cursor go to next index because end+1 ]
+a?  =>atmost one a
+      either one a or zero no of a's
+
+      0 ---- a
+      1 ----
+      2 ---- a
+      3 ---- a
+      4 ----
+      5 ---- a
+      6 ---- a
+      7 ---- a
+      8 ----
+      9 ----
+a{n} = exactly n no of occurance
+    a{3} => 3 no of a's
+a{m,n} = minimum m no of a's and max n no of a's
+    a{2,4} => 2 or 3 or 4 no of a's
+examples:
+  a{9}a* => min 9 no of a's after that any no of a's including zero
+
+^a => check whether the string is starts with a or not
+a$ => check whether the string is ends with a or not
+
+re Important functions:
+-----------------------
+match()        => check the given pattern at beginning of the target string or not
+                  if then returns Match object else None
+fullmatch()    => full string has to match for the given string
+search()       => match of the first occurance
+findall()      => find the given elements and returns in the form of list
+finditer()     => returns iterator of matched objects
+sub()          => substitution or replacement
+                  re.sub(regex,replacement,targetString)
+                  return type is String
+subn()         =>substitution or replacement and count of replacement
+                  return type will be tuple
+                  (resultString,no of replacement)
+split()        =>same as string split function
+compile()      =>

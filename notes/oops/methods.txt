@@ -1,0 +1,8 @@
+1.Instance method:[object related method]
+  ex: def m1(Self)
+2.Static method:
+    @staticmethod
+ex: def m1(cls):
+3.class method:
+      @classmethod
+  ex: def m1(cls):

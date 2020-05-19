@@ -1,0 +1,76 @@
+1.Airthemetic Operator:
+  +, -, *, /, %
+  / ==> Division
+  // ==> Floor Division Operator
+  ** ==> Power
+
+  10/2 = 5.0 [float]
+  10//2= 5 [int]
+
+  10.0/2 = 5.0 [float]
+  10.0//2 = 5.0 [float]
+
+  * ==> String repetetion [can not multiply sequence by non-int datatype]
+  'ab'*2.0 = invalid
+  + ==> String Concatenation
+2.Relational Operator or Comparison Operator
+  10<20 = T
+  10<20<30 = T [all condition is true]
+  10<'abc' = invalid[TypeError]
+
+  == operator ==> Content Comparison
+  is operator ==> reference Comparison
+
+3.Logical Operator:
+  and, or, not
+4.Bitwise Operator:
+  &, |, ^, ~, <<, >>
+  only for int and boolean
+  & ==> both bits are one then 1
+  | ==> atleast one bit is 1 then 1
+  ^ ==> both are different then 1
+  ~ ==> negation
+  print(4&5)  100
+              101
+              100
+
+
+5.Assignment Operator:
+  +=
+  -=
+  *=
+  /=
+  %=
+  //=
+  **=
+
+  &=
+  |=
+  ^=
+  >>=
+  <<=
+6.Special Operator:
+  Identity Operator:[address Comparison]
+    is
+    is not
+
+    a is b ==> both are addressing to same object
+    a = 10
+    b = 10
+    a is b ==> True
+
+    a==b -> Content Comparison
+    a is b -> reference Comparison
+
+    a=10.5
+    b=10.5
+    a is b => False
+    a == b => True
+
+7.Ternary Operator;
+  x = firstValue if condition else secondValue
+  a,b = 10,20
+  x = 10 if a<b else 30 ==> 10
+
+
+  Membership Operator

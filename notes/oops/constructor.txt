@@ -1,0 +1,24 @@
+constructor:
+------------
+
+1.within class to refer current  object python provide a implicit variable called self
+2.self variable  is always to current object
+3.self variable is the first argument for constructor and instance method
+4.by using self we can declare instance variable
+5.instead of self you can use any name no problem
+6.we can use the self within the class not outside the class
+
+self ==> it is implicit variable which is always to current object
+        when the class object is created then con will call
+        python responsible to provide 'self' variable
+
+
+* constructor is a special method in python class
+*
+
+  constructor                                               method
+1.name Should be __init__(self)                      1.name can be anything
+2.called explicitly                                  2.not required to call explicitly
+3.per object method call can be                      3.only once
+ any no of times
+ 4.we can write business logic                       4.we have to declare and initilize instance variables

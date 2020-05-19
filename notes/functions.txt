@@ -1,0 +1,73 @@
+Functions:-
+
+1.Positional Arguments
+2.Keyword Arguments
+3.Default Arguments
+4.Variable Length Arguments
+
+ex: def met(a,b):
+        print(a-b)
+    met(100,200) - Positional Arguments
+    met(a=100,b=200) - Keyword Arguments
+    met(100,b=200) - both used simultaneously[Valid]
+    met(a=100,200) - both used simultaneously[Invalid]
+                      Positional Arguments should be used first
+
+ex: def met(a,b=0): - Default Arguments[Valid]
+   def met(b=0,a):  Default Arguments should be the last Arguments[Invalid]
+
+ex: def met(*n):  - Any no of Arguments and internally it is in the form of tuples
+    def met(x,*n)
+      print(x)
+    met(10,20,30,40)- first Arguments is 'x' and next all Arguments are 'Variable Length Arguments'
+    def met(n*,x):
+      print(x)
+    met(10,20,30) - [INVALID] x value has to send like Keyword Arguments
+    met(10,20,x=30) - [VALID] Keyword Arguments has to be at the last
+
+ex: def met(**n): - Variable length Keyword Arguments
+                    name - 'Karthik', sub-'python', salary-'10000'
+                    form will be  in dictionary
+
+1.module - group of Functions
+2.package - group of modules
+3.liberary - group of packages
+
+global Variable:-
+------------------
+1.outside the fuc we can declare the global Variable
+    a=10
+2.inside the Function use 'global' Keyword to declare the global Variable
+  def f1():
+    global a
+    a = 10
+
+Anonymous Function or lambda Function:-
+----------------------------------------
+1. functions without having a name
+2. this one only for instance or one time use
+3. using lambda keyword  we can create Anonymous functions
+  ex: lambda n:n*n
+  Syntax lambda argument:expression
+4.lamba expression implicitly return the value
+5 we can send function as argument to another function
+  ex:
+  i. filter(fuc,sequence) - returns object [typecasting required]
+  ii. map(function,sequence1,sequence2) - returns object[typecasting required]
+  iii.reduce(function,sequence)- [typecasting not required]
+      o/p should contain only one item
+      import functools [import explicitly]
+
+Function Aliasing:
+------------------
+you can give another name to the exixting function is called function Aliasing
+address of the both Variable will be same
+it is mutable one side changes will reflects in another also
+
+Nested Function:
+----------------
+Function inside a function is called Nested function
+inner function will be local to that outer function
+from main you cannot call the inner function
+inside the outer function only you can call inner function
+to perform repeated fuctionality inside that function

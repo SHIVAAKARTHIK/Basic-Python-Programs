@@ -1,0 +1,31 @@
+1.maht Module:
+  import math
+  functions of math Module
+  ------------------------
+  ceil(x)
+  floor(x)
+  pow(x)
+  factorial(x)
+  trunc(x)
+  gcd(x)
+  sin(x)
+  cos(x)
+  tan(x)
+
+  pi = 3.14
+  e = 2.71
+  inf = infinity
+  nan = not a number
+2. Input and Output statement:
+  eval is power full functions
+  it will convert the value into corresponding datatype and do the action
+  the most commonly used function - [eval]
+  x = eval("10+20+30") ===> 60
+
+3.Command line argument:
+  py test.py 10,20,30 => this is called command line argument
+  in command line string has to pass in "" only
+  argv -> inbuilt variable in sys module with type of list
+  py test.py 10,20,30
+  argv[0] = test.py
+  argv[1] = 10

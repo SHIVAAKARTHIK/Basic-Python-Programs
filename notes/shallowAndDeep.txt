@@ -1,0 +1,14 @@
+Cloning:
+--------
+l1 = [10,20,30,40]
+l2 = l1
+then l1 and l2 address will be same
+if any changes in l1 it will reflects in l2 and vice versa
+l2[2]  = 90
+then :
+l1 = [10,20,90,40]
+l2 = [10,20,90,40]
+
+if we have to create new object with same contents then
+l2 = l1.copy()
+for both l1 and l2 two different objects will be created

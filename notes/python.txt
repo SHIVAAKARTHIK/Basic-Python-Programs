@@ -1,0 +1,47 @@
+1. Most common general purpose programing language
+2.  * Dynamically typed programing language
+    a = 10
+    a = True
+    a = 'String'
+    [no need to declare the data type]
+    * Easy to learn
+    * Freeware and open source
+    * Platform Independent
+    * Portability
+    * Both Procedure and Object oriented
+    * Interpreter - not going to compile
+        Python virtual machine take care of Syntax
+        Excplicitly no compilation is required
+    * Extensible -  other language code allowed use inside Python
+    * Embedded - use python code in other language
+    * Extensive library -
+3.Functional programing lang from C
+4. OOP from c++
+5. Scripting Languagge from perl and Shell Script
+6. Modular from Module-3
+7. Syntax is derived form C and ABC language
+
+
+Identifier:
+Name in python is called Identifier
+it may be classname,variable,fuction
+a = 10    a is a Identifier
+def f1()  f1 is a Identifier
+
+_abc - then it is private
+__abc - strongly it is private
+__abc__ -
+cash% - no Special char
+123abc - should not start with no
+
+
+Reserved: 33
+True,False,None = 3
+and,or,not,is = 4
+if,elif,else = 3
+while,for,break,continue,return,in,yeild = 7
+try,except,finally,raise,assert = 5
+import,from,as,class,def,pass,global,nonlocal,lambda,del,with = 11
+
+pip : [package management system]
+  used to install and manage software package written in python and found in python package index

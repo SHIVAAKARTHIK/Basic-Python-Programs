@@ -1,0 +1,87 @@
+Data Type:
+*In python everything is treated as OBJECT
+
+Fundamental Data Types:
+
+1.int :[integerial value]
+  without decimal
+  python-2 is having long but in python-3 no long datatype
+  4 base - decimal,binary,octal,hexadecimal
+  type conversion - int()
+    any type except complex
+    str to int =>str should be base-10 integral literals
+
+2.float:
+  all decimal values
+  exponential form also -> f= 1.2e3[1.2 * 10^3]
+  f= 0.123 [decimal]  -->valid
+  f=0o1.123[octal]    -->invalid
+  f=0X1.123[hexadecimal]-->invalid
+  f=0B1.123[binary]   -->invalid
+  type conversion - float()
+    any type except complex
+    str to int =>str should be base-10 integral literals
+
+3.complex:
+  a+bj
+  where a = real
+        b = immaginary
+4.bool:[True & False]
+  True = 1
+  False = 0
+  True+True = 2
+  True+False = 1
+  type conversion - bool()
+    bool(0) = Flase
+    bool(a+bj) = True
+    bool(-1) = True
+    bool('') = False
+    bool('abc') = True
+    bool(1) = True
+    bool(1000) = True
+    other than zero [0] all are True
+
+
+5.str:[recommonded is '']
+  'This is String'
+  "This is String"
+  '''This is Sting '''
+  """This is String """
+  [''' This is
+      String '''] multi line string go for triple quotes
+
+  type conversion - str()
+
+
+Fundamental Data Type vs Immutability
+  mutable = Changeable
+  immutable = non Changeable
+  All Fundamental datatypes are immutable
+
+  int ==>   0 to 256 existing object reused
+  a1=10 -- id(a1)-12345  if the values are same than memory allocation will be same
+  a2=10 -- id(a2)-12345
+  bool ==>   existing object reused
+  str ==>   existing object reused
+  float ==> new object will be created
+  complex==>new object will be created
+
+
+6.bytes:
+  only 0 to 256 range if it exceeds --> ValueError
+  immutable
+  used to store binary data like - audio,video,images
+7.bytearrays:
+  only 0 to 256 range if it exceeds --> ValueError
+  mutable
+  used to store binary data like - audio,video,images
+
+
+
+range
+list
+tuple
+set
+frozenset
+dict
+None

@@ -1,0 +1,124 @@
+String:
+* to define the multi line  string literals use '''   '''
+* to use single and double quotes as symbol use '''  '''
+
+s = "the 'Python ' is very easy language"
+s = ''' the "Python " is very 'easy' language'''
+s =  "The \"Python\" is very \'easy\' language"
+
+access character of string:
+---------------------------
+1.index
+  both +ve and -ve index
+     -6 -5 -4 -3 -2 -1
+  s = p  y  t  h  o  n
+      0  1  2  3  4  5
+  +ve index = i in for loop
+  -ve index = i - len(s) in for loop
+
+2.slice:
+  s[begin:end] = returns all char from begin to end-1 index[+ve index]
+                 returns all char from begin to end+1 index[-ve index]
+  s[begin:end:steps]
+  forward:
+  begin = default is 0
+  end = default is last index
+  steps = default is 1
+  backward:
+  begin = default is -1
+  end = -(default is last length(s))
+  steps = default is 1
+  s[::0] = invalid
+
+Mathematical operator:
+----------------------
+1.+ operator (concatenation) ==> str + str
+2.* operator (repetition) ==> str * int
+
+'abc'+'bca' ==>valid
+'abc'+2     ==>invalid
+
+'abc'*3 ==> valid
+'abc'*'bca' ==> invalid
+
+Membership operator:
+in operator     ==> returns boolean
+not in operator ==> returns boolean
+
+Comparison operator:
+<,<=,>,>=,==,!=
+depends on Unicode of characters
+'abc' == 'abc ' ==> false[space is having value]
+* to remove space 'strip()'
+  lstrip() = To remove space at left side [begin]
+  rstrip() = To remove space at right side[end]
+  strip()  = To remove space at the both side
+
+find substring:
+--------------
+find():[forwar direction]
+  *s.find(substring)
+  if the string is not available it returns -1
+  if string available returns index value of that letter
+  *s.find(substring,begin,end)
+index()
+ *s.index(substring)
+  if sting is not available valueError
+  if string available returns index value of that letter
+  *s.index(substring,begin,end)
+
+rfind()
+rindex()  backward direction
+
+counting no occurrence in string:
+-------------------------------
+  s.count(substring)
+  s.count(substring,begin,end)
+
+Replacing a string with another string:
+--------------------------------------
+  s.replace(old string,new string)
+  this returns new object
+  s =  'python is difficult' ==> object
+  s1 = s.replace('difficult','easy') ==> new object
+  s= s.replace('difficult','easy') ==> previous object go to garbage collector and new object will be created
+
+splitting the string:
+---------------------
+  s.split() => returns list object
+  default separator for the split is 'space' only
+  s = 10-10-2019
+  s.split('-')
+
+Joining the substring:
+---------------------
+  join() = takes only one argument
+  join('a','b','c') = invalid
+  join(['a','b','c'])
+
+  s = seperator.join(group of substring)
+  l=['abc','cbv']
+  s='-'.join(l) = abc-cbv
+  s=''.join(l)  = abccbv
+
+changing   the case of the string:
+--------------------------------
+  upper()
+  lower()
+  swapcase()
+  title()
+  capitalize()
+
+check type of character in string:
+---------------------------------
+isalnum() ==> alpha numeric
+isalpha() ==> only alphabets
+isdigits() ==> only digits
+islower() ==> lower case
+isupper() ==> upper case
+istitle() ==> string is in title case or not
+isspace() ==> contain only space or not
+
+Formatting Sting:
+----------------
+  print('{} is good one {}'.format('python','ok'))

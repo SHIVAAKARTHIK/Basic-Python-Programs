@@ -1,0 +1,17 @@
+* class ==> is a blue print to construct objects
+    it defines all properties and operations of objects
+* objects  ==> is physical existance of a class/real world entity
+* reference variable ==> which is pointing to the our object by using that we can perform operations
+
+properties => variables
+actions  => methods
+
+Hence  class contain both variable and methods
+
+Syntax:
+  class [className]:
+    '''doc String'''
+    variable(properties)
+    methods(actions)
+
+  

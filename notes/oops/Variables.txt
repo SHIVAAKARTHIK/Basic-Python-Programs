@@ -1,0 +1,27 @@
+Variables:
+---------
+1.Instance variables:[Object level]
+  variables declared using self
+  if the value of variable is varied from object to object
+  for every object a separate instance variables will be created
+  create instance variable
+  --------------------------
+  inside constructor by using self variable you can create instance variables
+  inside instance method also you can create instance variable using self keyword
+  we can declare instance variable using object reference variable
+
+  Access instance variable
+  --------------------------
+  within class by using self variable
+  outside the class by using object reference
+
+  Delete instance variable
+  -------------------------
+  * within class
+      del self.variablename
+  * outside Class
+      del objectreference.variablename
+
+2.Static Variables:[Class level]
+  for total class one copy of variable will be created
+3.Local Variables:[method level]

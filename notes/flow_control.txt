@@ -1,0 +1,17 @@
+Flow Control:
+1.Selection Statement ==> if, if-else, if-elif-else
+2.iterative Statement ==> for, while
+3.Transefer Statement ==> break,continue,pass
+
+* repeat the code for every item of sequence  ==> for loop
+* repeat code as long as some condition is true ==> while loop
+* skip the current iteration and continue for the next iteration ==> continue
+* if the loop without break then else part will execute
+* no work just empty box
+* garbage collector is there in python
+* del ==> to delete the variable
+  s1 = 'qbc'
+  s2 = 'afsd'
+  del s1,s2 ==>valid
+  del s1[2] ==> invalid because immutable
+  you can delete the variable but not part of the object 
